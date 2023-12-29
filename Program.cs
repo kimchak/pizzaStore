@@ -2,16 +2,10 @@
 using PizzaStore;
 
 Console.WriteLine("Hello, Pizza World!");
-//PizzaFactory factory = new PizzaFactory();
-//Pizza pizza1 = factory.createPizza("Pepperoni");
-//Pizza pizza2 = factory.createPizza("marinara");
 
-//Console.WriteLine(pizza1.ToString());
-//Console.WriteLine(pizza2.ToString());
-
-NYStylePizzaStore nycStore = new NYStylePizzaStore(new PizzaFactory());
+NYStylePizzaStore nycStore = new NYStylePizzaStore();
 nycStore.orderPizza("marinara");
 
-ChicagoStylePizzaStore chicagoStore = new ChicagoStylePizzaStore(new PizzaFactory());
+ChicagoStylePizzaStore chicagoStore = new ChicagoStylePizzaStore();
 chicagoStore.orderPizza("marinara");
 
